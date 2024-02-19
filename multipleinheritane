@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class vehicle
+{
+    public:
+    vehicle()
+    {
+    cout<<"this is an truck:"<<endl;
+    }
+};
+class brand
+{
+    public:
+    brand()
+    {
+        cout<<"volve:"<<endl;
+    }
+    
+};
+
+class type:public vehicle,public brand
+{
+    public:
+    void print2()
+    {
+    cout<<"8wheeler:";
+    }
+};
+int main()
+{
+    type obj;//we hv created an object of class name type(derived class) which will print mf of super class ;
+    obj.print2();//if we want print class type member function;
+}
